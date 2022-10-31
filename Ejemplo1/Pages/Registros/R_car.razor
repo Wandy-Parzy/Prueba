@@ -1,0 +1,155 @@
+@page "/R_car"
+@inject CarBLL CarBLL
+
+<EditForm Model="car" OnValidSubmit="Guardar">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="card">
+        <div class="card-header">
+            <h3>Registro de ocupaciones</h3>
+        </div>
+        <div class="card-body">
+            @*CarId*@
+            <div class="form-row align-items-center">
+                <div class="col">
+                    <div class="mb-3">
+                        <label>CarId</label>
+                        <div class="input-group">
+                            <InputNumber @bind-Value="car.CarId" class="form-control col-4" />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary" type="button" @onclick="Buscar"> <i
+                                        class="oi oi-magnifying-glass" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            @*Marca*@
+            <div class="form-group">
+                <label>Marca</label>
+                <InputText @bind-Value="car.Marca" class="form-control" />
+                <ValidationMessage For="@(() => car.Marca)" />
+            </div>
+
+            @*Modelo*@
+            <div class="form-group">
+                <label>Modelo</label>
+                <InputText @bind-Value="car.Modelo" class="form-control" />
+                <ValidationMessage For="@(() => car.Modelo)" />
+            </div>
+
+            @*Matricula*@
+            <div class="form-group">
+                <label>Matricula</label>
+                <InputText @bind-Value="car.Matricula" class="form-control" />
+                <ValidationMessage For="@(() => car.Matricula)" />
+            </div>
+
+            @*Fecha*@
+            <div class="form-group">
+                <label>Fecha</label>
+                <InputDate @bind-Value="car.Fecha" class="form-control" />
+                <ValidationMessage For="@(() => car.Fecha)" />
+            </div>
+
+            @*Descripcion*@
+            <div class="form-group">
+                <label>Descripción</label>
+                <InputText @bind-Value="car.Descripcion" class="form-control" />
+                <ValidationMessage For="@(() => car.Descripcion)" />
+            </div>
+
+
+        </div>
+        <div class="card-footer">
+            <div class="mb-3 text-center" display: inline-block>
+                <button type="button" class="btn btn-lg btn-primary" @onclick="Nuevo">
+                    <i class="oi oi-file" /> Nuevo
+                </button>
+                <button type="submit" class="btn btn-lg btn-success">
+                    <i class="oi oi-document" /> Guardar
+                </button>
+                <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar">
+                    <i class="oi oi-trash" /> Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int CarId { get; set; }
+
+    public Car car {get; set;} = new Car();
+
+    public List<Car> lista {get; set;} = new List<Car>();
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (CarId > 0)
+        {
+            this.car.CarId = CarId;
+            await this.Buscar();
+        }
+    }
+
+     public void Nuevo()
+    {
+        car = new Car();
+    }
+
+  bool Validar()
+    {
+        return car.Descripcion.Contains(".");
+    }
+
+     public async Task Guardar()
+    {
+
+        bool guardado = await CarBLL.Guardar(car);
+
+        if (guardado)
+        {
+            Nuevo();
+        }
+      
+    }
+     private async Task  Buscar()
+    {
+        if (car.CarId > 0)
+        {
+            var encontrado = await CarBLL.Buscar(car.CarId);
+
+            if (encontrado != null)
+            {
+                this.car = encontrado;
+            
+            }
+            else
+            {
+            
+            }
+        }
+    }
+ public async Task Eliminar()
+    {
+
+        var elimino = await CarBLL.Eliminar(car);
+        if (elimino)
+        {
+            Nuevo();
+        
+        }
+        else
+        {
+          
+        }
+    }
+
+}

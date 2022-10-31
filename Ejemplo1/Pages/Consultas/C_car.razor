@@ -1,0 +1,87 @@
+ @page "/C_car"
+@inject CarBLL carBLL
+
+<EditForm Model="car">
+    <DataAnnotationsValidator />
+    <div class="card">
+        <div class="card-header">
+            <h3>Consultas de carros</h3>
+
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="input-group d-flex align-items-end">
+                    <select class="form-control" @bind="Filtro">
+                         <option value="1">OcupaciónId</option>
+                         <option value="2">Descripción</option>
+                     </select>
+
+                <label class="form-control">Criterio</label>
+                <input type="text" class="form-control" @bind="Criterio">
+
+                <div>
+                    <button type="button" class="btn btn-warning" @onclick="Buscar">
+                        <i class="oi oi-magnifying-glass mr-2" /> Buscar
+                    </button>
+                </div>
+                </div>
+
+                   <div class="mb-3 col">
+                    <label>Fecha</label>
+                    <InputSelect class="form-select" @bind-Value="car.CarId">
+                        @foreach (Car car in lista)
+                        {
+                            <option value="@car.CarId">@car.Descripcion</option>
+                        }
+                    </InputSelect>
+                </div>
+            </form>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>CarId</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Matricula</th>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in lista)
+                {
+                    <tr>
+                        <td>@item.CarId</td>
+                        <td>@item.Marca</td>
+                        <td>@item.Modelo</td>
+                        <td>@item.Matricula</td>
+                        <td>@item.Fecha</td>
+                        <td>@item.Descripcion</td>
+                         
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</EditForm>
+
+@code {
+
+    public Car car {set;get;}= new Car();
+    public string Filtro{ get; set; }
+    public string Criterio{ get; set; }
+    public List<Car> lista { get; set; } = new List<Car>();
+     
+   protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    private async Task Buscar()
+    {
+        lista = await carBLL.GetCar(o => true);
+
+    }
+
+}
