@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TMxaCA1NpLuztarRSqryr10Uhc7nxQvPhRmnkqqocmlJuv+wODLgC5YkIJnmWpN1dEFz5f3MXiErVulNuvKcpg==",
+  "dgSpecHash": "rE181/rnItOTxuxKTf590nsb1JjH0/KO+kfnHqQWYb+Qrt9K1K62lGQxUh7b6+FxXJE/Tq7b1LcgvjEHEYzgOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\Ejemplo1.csproj",
+  "projectFilePath": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\Ejemplo1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wandy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\wandy\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.10\\microsoft.data.sqlite.core.6.0.10.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SehhZVCySBywcJDIfPTrJMqJuRQdetOmeVf7LJL5K38=",
+  "Hash": "pq6T+XEVHo3diZlERReiJ6mjs6aTTISgi9bmxoBvk10=",
   "Source": "Ejemplo1",
   "BasePath": "_content/Ejemplo1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Ejemplo1\\wwwroot",
       "Source": "Ejemplo1",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Ejemplo1.styles.css",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Ejemplo1.styles.css",
       "SourceId": "Ejemplo1",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "Ejemplo1.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Ejemplo1.styles.css"
+      "OriginalItemSpec": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Ejemplo1.styles.css"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Ejemplo1.bundle.scp.css",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Ejemplo1.bundle.scp.css",
       "SourceId": "Ejemplo1",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "Ejemplo1.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Ejemplo1.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Ejemplo1.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\css\\site.css",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\favicon.ico",
       "SourceId": "Ejemplo1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wandy\\Desktop\\Ejemplo1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\wwwroot\\",
       "BasePath": "_content/Ejemplo1",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
