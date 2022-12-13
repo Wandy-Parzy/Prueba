@@ -24,19 +24,26 @@ namespace Ejemplo1.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Descripcion")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Marca")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Matricula")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Modelo")
+                        .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Precio")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("CarId");
 

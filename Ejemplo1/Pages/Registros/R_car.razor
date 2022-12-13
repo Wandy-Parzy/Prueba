@@ -1,83 +1,100 @@
 @page "/R_car"
-@inject CarBLL CarBLL
+@page "/R_car/{CarId:int}"
+
+@inject CarBLL carBLL
+@inject NotificationService notificacion
 
 <EditForm Model="car" OnValidSubmit="Guardar">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <DataAnnotationsValidator />
     <ValidationSummary />
-    <div class="card">
-        <div class="card-header">
-            <h3>Registro de ocupaciones</h3>
+    <div class="rz-border-radius-4 shadow d-block p-2 border border-4 bg-white">
+        <div class="rz-border-radius-4 shadow card-header text-center">
+            <h3>Registro de autos</h3>
         </div>
-        <div class="card-body">
-            @*CarId*@
-            <div class="form-row align-items-center">
-                <div class="col">
-                    <div class="mb-3">
-                        <label>CarId</label>
-                        <div class="input-group">
-                            <InputNumber @bind-Value="car.CarId" class="form-control col-4" />
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-primary" type="button" @onclick="Buscar"> <i
-                                        class="oi oi-magnifying-glass" /> </button>
+
+        <div class="rz-border-radius-4 shadow border border-4 card card-body">
+            <div class="container overflow-hidden">
+                <form class="row gy-3">
+                    <div class="form-row align-items-center">
+                        @*CarId*@
+                            <div class="col-ms">
+                                <label>ClienteId</label>
+                                <div class="input-group mb-3">
+                                    <InputNumber @bind-Value="car.CarId"
+                                        class="rz-border-radius-4 shadow form-control" />
+                                    <div class="input-group-append">
+                                        <div class="input-group-append">
+                                            <button type="button"
+                                                class="rz-border-radius-4 shadow form-control col-4 btn btn-primary  "
+                                                @onclick="Buscar">Buscar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            @*Marca*@
+                            <div class="col-ms">
+                                <label>Marca </label>
+                                <InputText @bind-Value="car.Marca" placeholder="Ingrese la marca del vehiculo"
+                                    class="rz-border-radius-4 shadow form-control" />
+                                <ValidationMessage For="@(() => car.Marca)" />
+                            </div>
+
+                            @*Modelo*@
+                            <div class="col-ms">
+                                <label>Modelo </label>
+                                <InputText @bind-Value="car.Modelo" placeholder="Ingrese el modelo del vehiculo"
+                                    class="rz-border-radius-4 shadow form-control" />
+                                <ValidationMessage For="@(() => car.Modelo)" />
+                            </div>
+
+                            @*Matricula*@
+                            <div class="col-ms">
+                                <label>Matricula </label>
+                                <InputText @bind-Value="car.Matricula" placeholder="Ingrese la matricula del vehiculo"
+                                    class="rz-border-radius-4 shadow form-control" />
+                                <ValidationMessage For="@(() => car.Matricula)" />
+                            </div>
+
+                            <div class="col-ms">
+                                <label>Precio </label>
+                                <InputNumber @bind-Value="car.Precio" placeholder="Ingrese el precio del vehiculo"
+                                    class="rz-border-radius-4 shadow form-control" />
+                                <ValidationMessage For="@(() => car.Precio)" />
+                            </div>
+
+                            @*Fecha*@
+                            <div class="col-ms">
+                                <label>Fecha</label>
+                                <InputDate @bind-Value="car.Fecha" class="form-control" />
+                                <ValidationMessage For="@(() => car.Fecha)" />
+                            </div>
+
+                            @*Descripcion*@
+                            <div class="col-ms">
+                                <label>Descripción </label>
+                                <InputText @bind-Value="car.Descripcion" placeholder="Ingrese una descripción"
+                                    class="rz-border-radius-4 shadow form-control" />
+                                <ValidationMessage For="@(() => car.Descripcion)" />
                             </div>
                         </div>
-                    </div>
+                </form>
+            </div>
+
+
+            <div class="card-footer">
+                <div class="mb-3 text-center" display: inline-block>
+                    <button type="button" class="rz-border-radius-4 btn btn-primary btn-lg" @onclick="Nuevo">
+                        <i class="oi oi-document" /> Nuevo
+                    </button>
+                    <button type="submit" class="rz-border-radius-4 btn btn-success btn-lg">
+                        <i class="bi bi-save-fill" /> Guardar
+                    </button>
+                    <button type="button" class="rz-border-radius-4 btn btn-danger btn-lg" @onclick="Eliminar">
+                        <i class="oi oi-trash" /> Eliminar
+                    </button>
                 </div>
-            </div>
-
-
-
-
-            @*Marca*@
-            <div class="form-group">
-                <label>Marca</label>
-                <InputText @bind-Value="car.Marca" class="form-control" />
-                <ValidationMessage For="@(() => car.Marca)" />
-            </div>
-
-            @*Modelo*@
-            <div class="form-group">
-                <label>Modelo</label>
-                <InputText @bind-Value="car.Modelo" class="form-control" />
-                <ValidationMessage For="@(() => car.Modelo)" />
-            </div>
-
-            @*Matricula*@
-            <div class="form-group">
-                <label>Matricula</label>
-                <InputText @bind-Value="car.Matricula" class="form-control" />
-                <ValidationMessage For="@(() => car.Matricula)" />
-            </div>
-
-            @*Fecha*@
-            <div class="form-group">
-                <label>Fecha</label>
-                <InputDate @bind-Value="car.Fecha" class="form-control" />
-                <ValidationMessage For="@(() => car.Fecha)" />
-            </div>
-
-            @*Descripcion*@
-            <div class="form-group">
-                <label>Descripción commit</label>
-                <InputText @bind-Value="car.Descripcion" class="form-control" />
-                <ValidationMessage For="@(() => car.Descripcion)" />
-            </div>
-
-
-
-        </div>
-        <div class="card-footer">
-            <div class="mb-3 text-center" display: inline-block>
-                <button type="button" class="btn btn-lg btn-primary" @onclick="Nuevo">
-                    <i class="oi oi-file" /> Nuevo
-                </button>
-                <button type="submit" class="btn btn-lg btn-success">
-                    <i class="oi oi-document" /> Guardar
-                </button>
-                <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar">
-                    <i class="oi oi-trash" /> Eliminar
-                </button>
             </div>
         </div>
     </div>
@@ -87,69 +104,75 @@
     [Parameter]
     public int CarId { get; set; }
 
-    public Car car {get; set;} = new Car();
+    public Car car { get; set; } = new Car();
 
-    public List<Car> lista {get; set;} = new List<Car>();
+    public List<Car> lista { get; set; } = new List<Car>();
 
-    protected async override Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         if (CarId > 0)
         {
             this.car.CarId = CarId;
-            await this.Buscar();
+            this.Buscar();
+            this.car.Fecha = DateTime.Now;
         }
     }
 
-     public void Nuevo()
+    public void Nuevo()
     {
         car = new Car();
     }
 
-  bool Validar()
+    bool Validar()
     {
         return car.Descripcion.Contains(".");
     }
 
-     public async Task Guardar()
+    public void Guardar()
     {
 
-        bool guardado = await CarBLL.Guardar(car);
+        bool guardado = carBLL.Guardar(car);
 
         if (guardado)
         {
             Nuevo();
+            notificacion.ShowNotification("Guardado correctamente.");
         }
-      
+        else
+        {
+            notificacion.ShowNotification("No fue guardado.", NotificationSeverity.Error);
+        }
+
     }
-     private async Task  Buscar()
+    private void Buscar()
     {
         if (car.CarId > 0)
         {
-            var encontrado = await CarBLL.Buscar(car.CarId);
+            var encontrado = carBLL.Buscar(car.CarId);
 
             if (encontrado != null)
             {
                 this.car = encontrado;
-            
+                notificacion.ShowNotification("Registro encontrado", NotificationSeverity.Success);
             }
             else
             {
-            
+                notificacion.ShowNotification("Registro no encontrado", NotificationSeverity.Warning);
             }
         }
     }
- public async Task Eliminar()
+    public void Eliminar()
     {
 
-        var elimino = await CarBLL.Eliminar(car);
+        var elimino = carBLL.Eliminacion(car);
         if (elimino)
         {
             Nuevo();
-        
+            notificacion.ShowNotification("Eliminado correctamente.");
         }
         else
         {
-          
+            notificacion.ShowNotification("No fue eliminado.", NotificationSeverity.Error);
         }
     }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\Ejemplo1.csproj": {}
+    "C:\\Users\\wandy\\Prueba\\Ejemplo1\\Ejemplo1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\Ejemplo1.csproj": {
+    "C:\\Users\\wandy\\Prueba\\Ejemplo1\\Ejemplo1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\Ejemplo1.csproj",
+        "projectUniqueName": "C:\\Users\\wandy\\Prueba\\Ejemplo1\\Ejemplo1.csproj",
         "projectName": "Ejemplo1",
-        "projectPath": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\Ejemplo1.csproj",
+        "projectPath": "C:\\Users\\wandy\\Prueba\\Ejemplo1\\Ejemplo1.csproj",
         "packagesPath": "C:\\Users\\wandy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wandy\\Documents\\Escritorio\\Clases-3-22\\pbcar\\Prueba\\Ejemplo1\\obj\\",
+        "outputPath": "C:\\Users\\wandy\\Prueba\\Ejemplo1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wandy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.4.5, )"
             }
           },
           "imports": [

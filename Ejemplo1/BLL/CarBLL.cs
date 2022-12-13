@@ -6,64 +6,69 @@ using Ejemplo1.Model;
 namespace Ejemplo1.BLL
 {
     public class CarBLL
-    { 
+    {
         private Contexto _contexto;
 
-        public CarBLL(Contexto contexto) 
+        public CarBLL(Contexto contexto)
         {
-           _contexto = contexto;
-         }
+            _contexto = contexto;
+        }
 
-        public async Task<bool> Existe(int carID) {
-            return await _contexto.Car.AllAsync(o => o.CarId == carID);
-         }
-
-        
-        public async Task<bool> Insertar(Car car) 
+        public bool Existe(int CarId)
         {
-            await _contexto.Car.AddAsync(car);
-            int cantidad = await _contexto.SaveChangesAsync();
-            return cantidad > 0;
-         }
+            return _contexto.Car.Any(o => o.CarId == CarId);
+        }
 
-        public async Task<bool> Modificar(Car car)
+        private bool Insertar(Car car)
+        {
+            _contexto.Car.Add(car);
+            return _contexto.SaveChanges() > 0;
+        }
+
+        private bool Modificar(Car car)
         {
             _contexto.Entry(car).State = EntityState.Modified;
-            return await _contexto.SaveChangesAsync() > 0;
-
+            return _contexto.SaveChanges() > 0;
         }
-        public async Task<bool> Guardar(Car car) 
-        { 
-            if (!await Existe(car.CarId))
-            return await this.Insertar(car);
-            else
-            return await this.Modificar(car);
-         }
 
-          public async Task<bool> Eliminar(Car car)
+        public bool Guardar(Car car)
         {
-            _contexto.Entry(car).State = EntityState.Detached;
-            return await _contexto.SaveChangesAsync() > 0;
-
+            if (!Existe(car.CarId))
+                return this.Insertar(car);
+            else
+                return this.Modificar(car);
         }
 
-         public async Task<Car> Buscar(int carID)
-         {
-            return await _contexto.Car
-            .Where(o => o.CarId == carID)
-            .AsNoTracking()
-            .SingleOrDefaultAsync();
-         }
+        public bool Eliminar(Car car)
+        {
+            _contexto.Entry(car).State = EntityState.Deleted;
+            return _contexto.SaveChanges() > 0;
+        }
 
-         public async Task<List<Car>> GetCar(Expression<Func<Car, bool>> Criterio)
-         {
-            return await _contexto.Car
-            .AsNoTracking()
-            .Where(Criterio)
-            .ToListAsync();
+          public bool  Eliminacion(Car car)
+        {
+            bool eliminar;
+            if ( Existe(car.CarId))
+                return eliminar = true && this.Eliminar(car);
+            else
+                return eliminar = false;
+        }
 
-         }
+        public Car? Buscar(int registroId)
+        {
+            return _contexto.Car
+                    .Where(o => o.CarId == registroId)
+                    .AsNoTracking()
+                    .SingleOrDefault();
+        }
 
+        public List<Car> GetCar(Expression<Func<Car, bool>> Criterio)
+        {
+            return _contexto.Car
+                .AsNoTracking()
+                .Where(Criterio)
+                .ToList();
+        }
+    }
 
-     }
 }

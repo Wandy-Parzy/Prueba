@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Ejemplo1.DAl;
 using Ejemplo1.BLL;
 using Ejemplo1.Data;
+using Radzen;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,8 @@ con.UseSqlite(ConStr)
 );
 
 builder.Services.AddScoped<CarBLL>();
+builder.Services.AddScoped<NotificationService>();
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();
